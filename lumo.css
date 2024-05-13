@@ -136,6 +136,7 @@ border-radius: 1.25rem;
     border-radius: 1.25rem;
     border-top: 1px solid #6896DB;
     background-color: #6366F1;
+    color: #FFF; 
     padding: .1em .8em;
   margin-right: .5em;
   text-align: center;
@@ -179,7 +180,7 @@ text-decoration: none;
 }
 
 .section{
-    margin-top: 10rem;
+    margin-top: 9rem;
     padding:0 5em;
     transition: transform 1s, opacity 1s;
 }
@@ -339,7 +340,6 @@ width: 100%;
 .insight-left{
     height: 30rem;
 flex-basis: 50%;
-/* background-color: red; */
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
@@ -352,7 +352,7 @@ justify-content: space-evenly;
 font-family: Arial;
 font-size: 1.25rem;
 width: 100%;
-/* margin-top: 1em; */
+
 }
 .date{
     display: flex;align-items: start;
@@ -595,7 +595,7 @@ outline:none ;
 }
 .funds-icon{
     align-self: flex-start;
-    max-width: 100%;
+    max-width: 102%;
     height: auto;
 }
 .fund-start{
@@ -1277,8 +1277,12 @@ transition: all 300ms;
     }
  }
  @media screen and (max-width: 600px) {
-
- 
+    .input-message{
+        font-size: .9rem;
+    }
+     .section{
+            margin-top: 8rem;
+        }
 .empower{
     font-size: 1rem;
 }
@@ -1410,7 +1414,7 @@ font-size: 2.5rem;
     font-size:2.3rem ;
 }
 .section-about{
-       font-size: 1.1rem;
+       font-size: 1rem;
 }
 
 .sugg-budget-content{
@@ -1453,7 +1457,6 @@ justify-content: center;
      }
      @media screen and (max-width: 400px) {
         .section{
-            margin-top: 6.5rem;
             padding:0 1em;
         }
         .empower{
