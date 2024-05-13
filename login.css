@@ -1,0 +1,217 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-family-one: Arial;
+    --color-balck-light:  rgba(0, 0, 0, 0.705);
+}
+
+.back{
+    position: relative;
+    top: 1.5rem;
+    left: 3rem;
+    border: none;
+   cursor: pointer;
+   width:2.1rem ;
+   height: 100%;
+   object-fit: contain;
+
+}
+.logo{
+    width:13rem;
+    /* object-fit: contain; */
+    height: auto;
+align-self: center;
+}
+.signin-page{
+    font-family: var(--font-family-one);
+    padding: 2.5em 3em;
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.signin-title{
+    font-weight: 530;
+    font-family: var(--font-family-one);
+ margin-top: 1.3em;
+ text-align: center ;
+ font-size: 2rem;
+}
+
+.form{
+    margin-top: 2rem;
+}
+input{
+    background-color: transparent;
+    border: 2px solid gray;
+
+    outline: none;
+    padding: 1.6em 4em 1.6em;
+
+    width: 100%;
+    border-radius: 15px;
+font-size: 1rem;
+
+}
+input:focus{
+    border:2px solid  #6366F1;
+}
+input:focus + label{
+    color:  #6366F1;
+}
+label{
+        color: rgba(0, 0, 0, 0.829);
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-250%);
+        font-size: 1.1rem;
+        padding: 0 .3em;
+        background-color: white;
+}
+.single-input{
+    position: relative;
+    margin-bottom:2.5rem ;
+}
+
+.single-input img{
+    height: 1.3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1em;
+    padding-right: .5em;
+    border-right:1px solid rgba(0, 0, 0, 0.171);
+
+}
+button{
+    width: 100%;
+    text-align: center;
+    padding: 1.2em 0;
+   background-color: #6366F1;
+   color: white;
+   font-family: var(--font-family-one);
+   font-size: 1rem;
+   outline: none;
+   border: none;
+   border-radius: 9px;
+   margin-top: .5em;
+   cursor: pointer;
+}
+button:hover{
+    background-color:#6365f1ce;
+}
+
+.toSignUp{
+    color:#6366F1 ;
+    font-weight:400;
+   cursor: pointer;
+   text-align: center;
+   margin-top: .5em;
+   font-size: 1rem;
+
+}
+.toSignUp a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#6366F1 ;
+
+}
+.forgot{
+    text-align: center;
+    margin-top: .5em;
+    font-size: .8rem;
+}
+
+.error{
+    color: red;
+    font-size: .8rem;
+margin-top: .2em;
+margin-left: .5em;
+position: absolute;
+}
+.input-error{
+    border:2px solid red ;
+    
+}
+.label-error{
+    color: red;
+}
+
+@media(max-width:800px){
+
+    .signin-title{
+        font-size: 1.8rem;
+    }
+    .signin-page{
+        padding: 2em;
+        width: 90%;
+    }
+ input{
+    font-size: .9rem;
+ }
+ label{
+    font-size: .9rem;
+}
+img{
+    height: 1.1rem;
+ }
+ button{
+    padding: 1em 0;
+font-size: .9rem;
+ }
+ .log{
+   font-size: 90%;
+ }
+ .back{
+    left: 1em;
+    width:1.8rem ;
+ }
+ .logo{
+    width: 11rem;
+ }
+}
+@media(max-width:600px){
+   
+    .signin-title{
+        font-size: 1.5rem;
+    }
+    .signin-page{
+        padding: 2.5em 1em;
+    }
+   
+    .toSignUp{
+        font-size: 80%;
+      }
+      .back{
+        left: .5em;
+    width:1.2rem ;
+
+     }
+     .logo{
+        width: 8rem;
+     }
+     .error{
+    font-size: .7rem;
+
+     }
+}
+@media(max-width:350px){
+    .signin-title{
+        font-size: 1.3rem;
+    }
+    .logo{
+        width: 6.5rem;
+     }
+     .back{
+
+    width:1.05rem ;
+
+     }
+}
